@@ -86,7 +86,7 @@ export default function Page() {
             className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/leeerob"
+            href="https://www.linkedin.com/in/shiqiliu67"
           >
             <ArrowIcon />
             <p className="h-7 ml-2">Linkedin</p>
