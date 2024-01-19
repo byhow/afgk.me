@@ -92,6 +92,17 @@ export default function Page() {
             <p className="h-7 ml-2">Linkedin</p>
           </a>
         </li>
+        <li>
+          <a
+            className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://theglobeisalwaysbizarreby67.montaigne.io"
+          >
+            <ArrowIcon />
+            <p className="h-7 ml-2">中文博客</p>
+          </a>
+        </li>
       </ul>
     </section>
   );
