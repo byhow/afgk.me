@@ -107,7 +107,7 @@ export default function Blog({ params }) {
             url: `https://afgk.me/blog/${post.slug}`,
             author: {
               "@type": "Person",
-              name: "Eunice Lyu",
+              name: "Jules Lyu",
             },
           }),
         }}
