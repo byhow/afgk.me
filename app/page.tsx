@@ -1,8 +1,8 @@
 import Image from "next/image";
-import nyc from "public/images/nyc-night.png";
+import nyc from "public/images/nyc-night.webp";
 import giphy from "public/images/giphy.gif";
-import bookstore from "public/images/indie-bookstore.png";
-import roadtrip from "public/images/road-trip.png";
+import bookstore from "public/images/indie-bookstore.webp";
+import roadtrip from "public/images/road-trip.webp";
 import ArrowIcon from "./components/arrow-icon";
 
 export default function Page() {
