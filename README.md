@@ -58,3 +58,4 @@ Please remove all of my personal information (blog posts, images, etc.) by runni
 
 ## TODO
 - add atom/rss feed to the blogs
+- `/guestbook` needs alternative logins + fix server routes
