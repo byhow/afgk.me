@@ -2,7 +2,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import sunset from "public/images/photos/sunset.webp";
-import VideoPlayer from "../components/video";
+import la from "public/images/photos/la.webp";
+import vintage from "public/images/photos/vintage-shop.webp";
+import wind from "public/images/photos/wind.webp";
+import nest from "public/images/photos/nest.webp";
 
 export const metadata: Metadata = {
   title: "Photography",
@@ -21,7 +24,17 @@ export default function UsesPage() {
       <div className="columns-2 sm:columns-3 gap-4 my-8">
         <div className="relative h-80 mb-4">
           <Image
-            alt="?"
+            alt="LA sunset in Wilshire Boulevard"
+            src={la}
+            fill
+            sizes="(max-width: 768px) 213px, 33vw"
+            priority
+            className="rounded-lg object-cover"
+          />
+        </div>
+        <div className="relative h-80 mb-4">
+          <Image
+            alt="Sunset in Southern California"
             src={sunset}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
@@ -31,8 +44,8 @@ export default function UsesPage() {
         </div>
         <div className="relative h-80 mb-4">
           <Image
-            alt="?"
-            src={sunset}
+            alt="Vintage shop in Art District in LA"
+            src={vintage}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -41,8 +54,8 @@ export default function UsesPage() {
         </div>
         <div className="relative h-80 mb-4">
           <Image
-            alt="?"
-            src={sunset}
+            alt="Wind will blow"
+            src={wind}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -51,27 +64,18 @@ export default function UsesPage() {
         </div>
         <div className="relative h-80 mb-4">
           <Image
-            alt="?"
-            src={sunset}
+            alt="Very cool art work at the Hammer Museum in LA"
+            src={nest}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
             className="rounded-lg object-cover"
           />
         </div>
-        <div className="relative h-80 mb-4">
-          <Image
-            alt="?"
-            src={sunset}
-            fill
-            sizes="(max-width: 768px) 213px, 33vw"
-            priority
-            className="rounded-lg object-cover"
-          />
-        </div>
-        <div className="relative h-80 mb-4">
+        {/* TODO: something wrong with Vercel Blob and CSP */}
+        {/* <div className="relative h-80 mb-4">
           <VideoPlayer />
-        </div>
+        </div> */}
       </div>
     </section>
   );

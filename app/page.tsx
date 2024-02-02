@@ -3,6 +3,8 @@ import nyc from "public/images/nyc-night.webp";
 import giphy from "public/images/giphy.gif";
 import bookstore from "public/images/indie-bookstore.webp";
 import roadtrip from "public/images/road-trip.webp";
+import nest from "public/images/photos/nest.webp";
+import voice from "public/images/photos/voice.webp";
 import ArrowIcon from "./components/arrow-icon";
 
 export default function Page() {
@@ -18,8 +20,8 @@ export default function Page() {
       <div className="columns-2 sm:columns-3 gap-4 my-8">
         <div className="relative h-40 mb-4">
           <Image
-            alt="Me speaking on stage at React Summit about the future of Next.js"
-            src={nyc}
+            alt="Very cool art work at the Hammer Museum in LA"
+            src={nest}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -28,17 +30,17 @@ export default function Page() {
         </div>
         <div className="relative h-80 mb-4 sm:mb-0">
           <Image
-            alt="Me, Lydia, and Delba filming the Next.js Conf keynote"
+            alt="Vintage bookstore in Taipei, trip during December 2023"
             src={bookstore}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
-            className="rounded-lg object-cover object-[-16px] sm:object-center"
+            className="rounded-lg object-cover sm:object-center"
           />
         </div>
         <div className="relative h-40 sm:h-80 sm:mb-4">
           <Image
-            alt="Me standing on stage at Reactathon delivering the keynote"
+            alt="Skyline in New York city, a trip in May 2023"
             src={nyc}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
@@ -48,7 +50,7 @@ export default function Page() {
         </div>
         <div className="relative h-40 mb-4 sm:mb-0">
           <Image
-            alt="Me standing on stage at SmashingConf giving a talk about my optimism for the web"
+            alt="Cute Giphy animal avatars that I like"
             src={giphy}
             // fill
             sizes="(max-width: 768px) 213px, 33vw"
@@ -58,8 +60,8 @@ export default function Page() {
         </div>
         <div className="relative h-40 mb-4">
           <Image
-            alt="Me and Guillermo Rauch on stage for Vercel Ship, answering questions from the Next.js community"
-            src={nyc}
+            alt="Powerful writing on a bench in a New York City park"
+            src={voice}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -68,7 +70,7 @@ export default function Page() {
         </div>
         <div className="relative h-80">
           <Image
-            alt="My badge on top of a pile of badges from a Vercel meetup we held"
+            alt="Me taking a picture at the sunset by a beach in LA"
             src={roadtrip}
             fill
             sizes="(min-width: 768px) 213px, 33vw"
