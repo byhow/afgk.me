@@ -14,8 +14,7 @@ export default function Page() {
         hey, this is Jules 👋
       </h1>
       <p className="prose prose-neutral dark:prose-invert">
-        I am a social media marketing professional, student, and writer based in
-        LA.
+        I'm a cross between a leaf, a cloud, and a heavy peace of machinery.
       </p>
       <div className="columns-2 sm:columns-3 gap-4 my-8">
         <div className="relative h-40 mb-4">
