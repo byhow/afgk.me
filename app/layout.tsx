@@ -35,10 +35,10 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/public/favicon/favicon.ico",
-    apple: "/public/favicon/apple-touch-icon.png",
+    icon: "/favicon/favicon.ico",
+    apple: "/favicon/apple-touch-icon.png",
   },
-  manifest: "/public/favicon/site.webmanifest",
+  manifest: "/favicon/site.webmanifest",
   twitter: {
     title: "Jules Lyu",
     card: "summary_large_image",
