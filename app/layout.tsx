@@ -34,6 +34,11 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  icons: {
+    icon: "/public/favicon/favicon.ico",
+    apple: "/public/favicon/apple-touch-icon.png",
+  },
+  manifest: "/public/favicon/site.webmanifest",
   twitter: {
     title: "Jules Lyu",
     card: "summary_large_image",
