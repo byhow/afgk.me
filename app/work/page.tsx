@@ -1,3 +1,7 @@
+"use client";
+
+import Link from "next/link";
+
 export default function Page() {
   return (
     <section>
@@ -27,6 +31,22 @@ export default function Page() {
 
       <br />
       <p className="prose prose-neutral dark:prose-invert">Buckle up!</p>
+      <br />
+      <Link href={"/work/big-brand"} className="underline">
+        How Big Brand Matters
+      </Link>
+      <br />
+      <Link href={"/work/influencer"} className="underline">
+        Influencer Strategies
+      </Link>
+      <br />
+      <Link href={"/work/localize-market"} className="underline">
+        Market Localization
+      </Link>
+      <br />
+      <Link href={"/work/roommate"} className="underline">
+        Roommate Matches
+      </Link>
     </section>
   );
 }
