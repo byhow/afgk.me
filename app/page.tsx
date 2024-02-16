@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <section>
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">
-        hey, this is Jules 👋
+        Hey, this is Jules 👋
       </h1>
       <p className="prose prose-neutral dark:prose-invert">
         I'm a cross between a leaf, a cloud, and a heavy peace of machinery.
