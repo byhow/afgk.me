@@ -1,10 +1,12 @@
 import Image from "next/image";
+// individual image imports
 import nyc from "public/images/nyc-night.webp";
 import giphy from "public/images/giphy.gif";
 import bookstore from "public/images/indie-bookstore.webp";
 import roadtrip from "public/images/road-trip.webp";
 import nest from "public/images/photos/nest.webp";
 import voice from "public/images/photos/voice.webp";
+// back button icon
 import ArrowIcon from "./components/arrow-icon";
 
 export default function Page() {
