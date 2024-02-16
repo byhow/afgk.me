@@ -5,12 +5,16 @@ export const sql = postgres(process.env.POSTGRES_URL, {
 });
 
 const nextConfig = {
+  transpilePackages: ['react-pdf'],
   webpack: (config) => {
     config.resolve.alias.canvas = false;
+    config.resolve.extensionAlias = {
+      '.js': ['.js', '.ts', '.tsx'],
+    };
     return config
   },
   experimental: {
-    ppr: true,
+    // ppr: true, // only for canary
     useLightningcss: true,
   },
   async redirects() {
