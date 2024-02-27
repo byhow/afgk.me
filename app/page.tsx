@@ -2,7 +2,7 @@ import Image from "next/image";
 // individual image imports
 import nyc from "public/images/nyc-night.webp";
 import giphy from "public/images/giphy.gif";
-import bookstore from "public/images/indie-bookstore.webp";
+import taiwan from "public/images/taiwan.webp";
 import roadtrip from "public/images/road-trip.webp";
 import nest from "public/images/photos/nest.webp";
 import voice from "public/images/photos/voice.webp";
@@ -32,7 +32,7 @@ export default function Page() {
         <div className="relative h-80 mb-4 sm:mb-0">
           <Image
             alt="Vintage bookstore in Taipei, trip during December 2023"
-            src={bookstore}
+            src={taiwan}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
