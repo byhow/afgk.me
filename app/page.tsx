@@ -57,6 +57,7 @@ export default function Page() {
             sizes="(max-width: 768px) 213px, 33vw"
             priority
             className="rounded-lg object-cover"
+            unoptimized
           />
         </div>
         <div className="relative h-40 mb-4">
