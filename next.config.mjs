@@ -5,17 +5,13 @@ export const sql = postgres(process.env.POSTGRES_URL, {
 });
 
 const nextConfig = {
-  transpilePackages: ['react-pdf'],
+  transpilePackages: ['next-mdx-remote'],
   webpack: (config) => {
     config.resolve.alias.canvas = false;
-    config.resolve.extensionAlias = {
-      '.js': ['.js', '.ts', '.tsx'],
-    };
     return config
   },
   experimental: {
-    // ppr: true, // only for canary
-    useLightningcss: true,
+    ppr: true, // only for canary
   },
   async redirects() {
     if (!process.env.POSTGRES_URL) {
