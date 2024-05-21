@@ -26,9 +26,7 @@ export default function Page() {
         LOCALIZING MARKET
       </h1>
       <Document
-        file={
-          "https://uzoqbbizturkvlbg.public.blob.vercel-storage.com/localize-market-Yjn9ju0ZJ8zUpNCSNBRlhch2I2wy0e.pdf"
-        }
+        file={"/pdf/localize-market.pdf"}
         onLoadSuccess={onDocumentLoadSuccess}
       >
         {Array.from(new Array(numPages), (el, index) => (

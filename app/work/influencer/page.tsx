@@ -26,9 +26,7 @@ export default function Page() {
         INFLUENCER STRATEGY
       </h1>
       <Document
-        file={
-          "https://uzoqbbizturkvlbg.public.blob.vercel-storage.com/influencer-marketing-b77Ijo2Ucy0e2dmaZ9LquJYtxL8vqR.pdf"
-        }
+        file="/pdf/influencer.pdf"
         onLoadSuccess={onDocumentLoadSuccess}
       >
         {Array.from(new Array(numPages), (el, index) => (

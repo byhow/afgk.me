@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import Link from "next/link";
-// import "./pdf.css";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.js",
@@ -25,10 +24,7 @@ export default function Page() {
         <br />
         HOW BIG BRAND MATTERS
       </h1>
-      <Document
-        file="https://uzoqbbizturkvlbg.public.blob.vercel-storage.com/big-brands-4sWgcuoaekLXaAEPP3efMFRNIW9Ybg.pdf"
-        onLoadSuccess={onDocumentLoadSuccess}
-      >
+      <Document file="/pdf/big-brand.pdf" onLoadSuccess={onDocumentLoadSuccess}>
         {Array.from(new Array(numPages), (el, index) => (
           <>
             <PDFPage

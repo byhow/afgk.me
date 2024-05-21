@@ -13,11 +13,16 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 export default function Page() {
   const [numPages, setNumPages] = useState<number>();
+  const [loading, setLoading] = useState<boolean>(true);
 
   function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
     setNumPages(numPages);
+    setLoading(false);
   }
 
+  function onDocumentLoadStart() {
+    setLoading(true);
+  }
   return (
     <section>
       <Link href={"/work"}>{"< Back"}</Link>
@@ -26,8 +31,9 @@ export default function Page() {
         ROOMMATE MATCHES
       </h1>
       <Document
-        file="https://uzoqbbizturkvlbg.public.blob.vercel-storage.com/roommate-BKQAZnw5CSDsANkVxAo6ZoYQwThlzZ.pdf"
+        file="/pdf/roommate.pdf"
         onLoadSuccess={onDocumentLoadSuccess}
+        onLoadStart={onDocumentLoadStart}
       >
         {Array.from(new Array(numPages), (el, index) => (
           <>
