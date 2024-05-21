@@ -32,7 +32,7 @@ export default function Page() {
         <div className="relative h-80 mb-4 sm:mb-0">
           <Image
             alt="Vintage bookstore in Taipei, trip during December 2023"
-            src={taiwan}
+            src={nest}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
