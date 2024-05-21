@@ -32,7 +32,7 @@ export default function Page() {
         <div className="relative h-80 mb-4 sm:mb-0">
           <Image
             alt="Vintage bookstore in Taipei, trip during December 2023"
-            src={nest}
+            src={taiwan}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -72,7 +72,7 @@ export default function Page() {
         <div className="relative h-80">
           <Image
             alt="Me taking a picture at the sunset by a beach in LA"
-            src={roadtrip}
+            src={taiwan}
             fill
             sizes="(min-width: 768px) 213px, 33vw"
             priority
