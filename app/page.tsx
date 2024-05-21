@@ -19,7 +19,7 @@ export default function Page() {
         I'm a cross between a leaf, a cloud, and a heavy peace of machinery.
       </p>
       <div className="columns-2 sm:columns-3 gap-4 my-8">
-        {/* <div className="relative h-40 mb-4">
+        <div className="relative h-40 mb-4">
           <Image
             alt="Very cool art work at the Hammer Museum in LA"
             src={nest}
@@ -77,7 +77,7 @@ export default function Page() {
             priority
             className="rounded-lg object-cover"
           />
-        </div> */}
+        </div>
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p>you can find me from these links.</p>
