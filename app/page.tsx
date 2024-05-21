@@ -19,7 +19,7 @@ export default function Page() {
         I'm a cross between a leaf, a cloud, and a heavy peace of machinery.
       </p>
       <div className="columns-2 sm:columns-3 gap-4 my-8">
-        <div className="relative h-40 mb-4">
+        {/* <div className="relative h-40 mb-4">
           <Image
             alt="Very cool art work at the Hammer Museum in LA"
             src={nest}
@@ -55,7 +55,6 @@ export default function Page() {
             src={giphy}
             // fill
             sizes="(max-width: 768px) 213px, 33vw"
-            priority
             className="rounded-lg object-cover"
           />
         </div>
@@ -72,13 +71,13 @@ export default function Page() {
         <div className="relative h-80">
           <Image
             alt="Me taking a picture at the sunset by a beach in LA"
-            src={taiwan}
+            src={roadtrip}
             fill
             sizes="(min-width: 768px) 213px, 33vw"
             priority
             className="rounded-lg object-cover"
           />
-        </div>
+        </div> */}
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p>you can find me from these links.</p>
