@@ -10,9 +10,9 @@ const nextConfig = {
     config.resolve.alias.canvas = false;
     return config
   },
-  experimental: {
-    ppr: true, // only for canary
-  },
+  // experimental: {
+  //   ppr: true, // only for canary
+  // },
   async redirects() {
     if (!process.env.POSTGRES_URL) {
       return [];
