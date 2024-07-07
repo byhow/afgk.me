@@ -5,14 +5,19 @@ export const sql = postgres(process.env.POSTGRES_URL, {
 });
 
 const nextConfig = {
+  logging: {
+    fetches: {
+      fullUrl: true,
+    },
+  },
   transpilePackages: ['next-mdx-remote'],
   webpack: (config) => {
     config.resolve.alias.canvas = false;
     return config
   },
-  // experimental: {
-  //   ppr: true, // only for canary
-  // },
+  experimental: {
+    ppr: true, // only for canary
+  },
   async redirects() {
     if (!process.env.POSTGRES_URL) {
       return [];
