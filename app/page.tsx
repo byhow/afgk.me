@@ -1,13 +1,13 @@
-import Image from "next/image";
+import Image from 'next/image';
 // individual image imports
-import nyc from "public/images/nyc-night.webp";
-import giphy from "public/images/giphy.gif";
-import taiwan from "public/images/taiwan.webp";
-import roadtrip from "public/images/road-trip.webp";
-import nest from "public/images/photos/nest.webp";
-import voice from "public/images/photos/voice.webp";
+import nyc from 'public/images/nyc-night.webp';
+import giphy from 'public/images/giphy.gif';
+import taiwan from 'public/images/taiwan.webp';
+import roadtrip from 'public/images/road-trip.webp';
+import nest from 'public/images/photos/nest.webp';
+import voice from 'public/images/photos/voice.webp';
 // back button icon
-import ArrowIcon from "./components/arrow-icon";
+import ArrowIcon from './components/arrow-icon';
 
 export default function Page() {
   return (
@@ -23,6 +23,7 @@ export default function Page() {
           <Image
             alt="Very cool art work at the Hammer Museum in LA"
             src={nest}
+            placeholder="blur"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -33,6 +34,7 @@ export default function Page() {
           <Image
             alt="Vintage bookstore in Taipei, trip during December 2023"
             src={taiwan}
+            placeholder="blur"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -43,6 +45,7 @@ export default function Page() {
           <Image
             alt="Skyline in New York city, a trip in May 2023"
             src={nyc}
+            placeholder="blur"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -51,6 +54,7 @@ export default function Page() {
         </div>
         <div className="relative h-40 mb-4 sm:mb-0">
           <Image
+            unoptimized
             alt="Cute Giphy animal avatars that I like"
             src={giphy}
             // fill
@@ -60,6 +64,7 @@ export default function Page() {
         </div>
         <div className="relative h-40 mb-4">
           <Image
+            placeholder="blur"
             alt="Powerful writing on a bench in a New York City park"
             src={voice}
             fill
@@ -70,6 +75,7 @@ export default function Page() {
         </div>
         <div className="relative h-80">
           <Image
+            placeholder="blur"
             alt="Me taking a picture at the sunset by a beach in LA"
             src={roadtrip}
             fill

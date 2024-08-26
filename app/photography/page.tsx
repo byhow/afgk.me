@@ -1,24 +1,23 @@
-// import VideoPlayer from "app/components/video";
-import type { Metadata } from "next";
-import Image from "next/image";
-import sunset from "public/images/photos/sunset.webp";
-import la from "public/images/photos/la.webp";
-import vintage from "public/images/photos/vintage-shop.webp";
-import wind from "public/images/photos/wind.webp";
-import nest from "public/images/photos/nest.webp";
-import beach from "public/images/photos/beach.webp";
-import branches from "public/images/photos/branches.webp";
-import couple from "public/images/photos/couple.webp";
-import crescent from "public/images/photos/crescent.webp";
-import evening from "public/images/photos/evening.webp";
-import house from "public/images/photos/house.webp";
-import people from "public/images/photos/people.webp";
-import sea from "public/images/photos/sea.webp";
-import volley from "public/images/photos/volley.webp";
-import bizarre from "public/images/bizarre.webp";
+import type { Metadata } from 'next';
+import Image from 'next/image';
+import sunset from 'public/images/photos/sunset.webp';
+import la from 'public/images/photos/la.webp';
+import vintage from 'public/images/photos/vintage-shop.webp';
+import wind from 'public/images/photos/wind.webp';
+import nest from 'public/images/photos/nest.webp';
+import beach from 'public/images/photos/beach.webp';
+import branches from 'public/images/photos/branches.webp';
+import couple from 'public/images/photos/couple.webp';
+import crescent from 'public/images/photos/crescent.webp';
+import evening from 'public/images/photos/evening.webp';
+import house from 'public/images/photos/house.webp';
+import people from 'public/images/photos/people.webp';
+import sea from 'public/images/photos/sea.webp';
+import volley from 'public/images/photos/volley.webp';
+import bizarre from 'public/images/bizarre.webp';
 
 export const metadata: Metadata = {
-  title: "Photography",
+  title: 'Photography',
   description: "Here's some of my photography works.",
 };
 
@@ -36,6 +35,7 @@ export default function UsesPage() {
           <Image
             alt="LA sunset in Wilshire Boulevard"
             src={la}
+            placeholder="blur"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -46,6 +46,7 @@ export default function UsesPage() {
           <Image
             alt="Sunset in Southern California"
             src={sunset}
+            placeholder="blur"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -56,6 +57,7 @@ export default function UsesPage() {
           <Image
             alt="Vintage shop in Art District in LA"
             src={vintage}
+            placeholder="blur"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -66,6 +68,7 @@ export default function UsesPage() {
           <Image
             alt="Wind will blow"
             src={wind}
+            placeholder="blur"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -76,6 +79,7 @@ export default function UsesPage() {
           <Image
             alt="Very cool art work at the Hammer Museum in LA"
             src={nest}
+            placeholder="blur"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -86,6 +90,7 @@ export default function UsesPage() {
           <Image
             alt="Chill afternoon in Laguna Beach"
             src={beach}
+            placeholder="blur"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -96,6 +101,7 @@ export default function UsesPage() {
           <Image
             alt="Lonely branches by the beach"
             src={branches}
+            placeholder="blur"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -106,6 +112,7 @@ export default function UsesPage() {
           <Image
             alt="sunset at Laguna"
             src={couple}
+            placeholder="blur"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -116,6 +123,7 @@ export default function UsesPage() {
           <Image
             alt="The moon slowly fading away"
             src={crescent}
+            placeholder="blur"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -126,6 +134,7 @@ export default function UsesPage() {
           <Image
             alt="Evening sunset next to the highway"
             src={evening}
+            placeholder="blur"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -136,6 +145,7 @@ export default function UsesPage() {
           <Image
             alt="Sneak peek outside of a parking lot in Laguna Beach"
             src={house}
+            placeholder="blur"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -146,6 +156,7 @@ export default function UsesPage() {
           <Image
             alt="Crowds walking alongside the beach"
             src={people}
+            placeholder="blur"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -156,6 +167,7 @@ export default function UsesPage() {
           <Image
             alt="Crowds walking alongside the beach in the other direction"
             src={sea}
+            placeholder="blur"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -166,6 +178,7 @@ export default function UsesPage() {
           <Image
             alt="Volleyball field by the sea"
             src={volley}
+            placeholder="blur"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -176,6 +189,7 @@ export default function UsesPage() {
           <Image
             alt="THE BIZARRE"
             src={bizarre}
+            placeholder="blur"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
